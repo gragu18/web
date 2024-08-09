@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container .tenor-gif-embed {
+    display: flex;
+    gap: 200px;
+}
+
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff; 
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5rem 1rem 3rem rgba(255, 255, 255, 0);
+}
+/* Estilos responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .container .tenor-gif-embed {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .container .btn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn a {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+
